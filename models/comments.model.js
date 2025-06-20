@@ -20,3 +20,7 @@ const commentSchema = new mongoose.Schema(
   },
   { timestamps: true } // This will automatically add `createdAt` and `updatedAt` time
 );
+
+const Comment = mongoose.model("comment", commentSchema);
+
+export default Comment;
